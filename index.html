@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sean Ashley Quilay | System Developer</title>
+
+<!-- Bootstrap 5 & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+<!-- GLightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sean Ashley Quilay</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Sean Ashley Quilay</h1>
+    <p class="lead">System Developer</p>
+    <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row align-items-center">
+      
+      <!-- Profile Picture -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <div class="profile-pic-frame mx-auto">
+          <img src="pictures/me.jpg" alt="Sean Ashley Quilay" class="img-fluid rounded-circle">
+        </div>
+      </div>
+      
+      <!-- Description and Education -->
+      <div class="col-md-8">
+        <p>
+          I’m a passionate Computer Science graduate and Full-Stack Developer with hands-on experience in web development, software systems, game development, and machine learning. I enjoy building end-to-end applications that solve real-world problems and continuously challenge myself to learn new technologies.
+        </p>
+        
+        <h5 class="mt-4">Education</h5>
+        <ul>
+          <span class="badge bg-primary me-2">Dean's Lister 2023</span>
+          <span class="badge bg-success me-2">Best Thesis 2025</span>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+<div class="text-center mt-3">
+  <button class="btn btn-primary" onclick="downloadResumePDF()">Download Resume (PDF)</button>
+</div>
+</section>
+<!-- Hidden Resume Content for PDF -->
+<div id="resume-content" style="position: absolute; left: -9999px; top: 0; width: 210mm; padding: 20px; font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.4; color: #000;">
+  <!-- your resume content -->
+  <h1 style="font-size:16pt; margin-bottom:5px;">Sean Ashley A. Quilay</h1>
+  <div style="margin-bottom:10px;">
+    Phone: 0956-653-7749 | Email: ashleyquilay81@gmail.com<br>
+    Address: #015 Purok 6, Barangay Punta, Calamba City
+  </div>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Career Objective</h2>
+  <p style="font-size:12pt; margin:5px 0;">
+    Passionate Computer Science graduate with experience in web development, software systems, game development, and machine learning. Seeking an entry-level role in IT or software development to contribute knowledge and grow professionally.
+  </p>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Technical Skills</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li>Programming Languages: Java, C++, C#, PHP, HTML, CSS, SQL</li>
+    <li>Frameworks & Libraries: Laravel, Laravel Breeze, PIL, OCR</li>
+    <li>Tools & IDEs: Visual Studio, VS Code, NetBeans, XAMPP</li>
+    <li>Other Tools: Adobe Photoshop, Canva, Google Workspace, Microsoft 365</li>
+    <li>Database Systems: MySQL, phpMyAdmin</li>
+    <li>Hardware: Raspberry Pi 4</li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Work Experience</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li><strong>System Management Staff</strong> - Kanepackage Philippine Inc. (Sep 2025 – Feb 2026)<br>
+      • Developed and deployed Asset Inventory Management System using PHP, HTML, Bootstrap, CSS, SQL.<br>
+      • Managed system operations and ensured smooth asset tracking.
+    </li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Internship Experience</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li><strong>IT Department Database Admin</strong> - Torres Technology Center Corp. (Dec 2024 – Jan 2025)<br>
+      • Installed Ubuntu VMs.<br>
+      • Developed RFID Time-Keeping System with Java & Apache Tomcat on Raspberry Pi.<br>
+      • Gained full system lifecycle experience.
+    </li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Projects</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li>Fake Paracetamol Detection Model - Python, CNN, PIL, OCR</li>
+    <li>Basic POS and Elementary Grading System - C# Visual Studio</li>
+    <li>Gym Website with Laravel Breeze - PHP, MySQL</li>
+    <li>Dental Clinic Booking System - PHP, MySQL, XAMPP</li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Education</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li>National University – Laguna | BS Computer Science (2021–2025)<br>
+        • Dean’s Lister (2nd honors – 2023)<br>
+        • Best in Thesis (2025)
+    </li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Certifications</h2>
+  <ul style="font-size:12pt; margin:5px 0 10px 20px;">
+    <li>Programmers Codeposting Tech Talks (2022)</li>
+    <li>Amazon AWSome Day Online Conference (2022)</li>
+  </ul>
+
+  <h2 style="font-size:14pt; border-bottom:1px solid #000; padding-bottom:2px; margin-top:10px;">Soft Skills</h2>
+  <p style="font-size:12pt; margin:5px 0;">Adaptability, Resourceful, Flexible, Resilient</p>
+
+</div>
+
+<!-- Skills -->
+<section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+
+    <h4 class="mb-3">Programming Languages</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/java.jpg" class="skill-icon" alt="Java">
+        <p class="mt-2">Java</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/c++.png" class="skill-icon" alt="C++">
+        <p class="mt-2">C++</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/csharp.png" class="skill-icon" alt="C#">
+        <p class="mt-2">C#</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/php.png" class="skill-icon" alt="PHP">
+        <p class="mt-2">PHP</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/sql.png" class="skill-icon" alt="SQL">
+        <p class="mt-2">SQL</p>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Web Technologies</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/html.png" class="skill-icon" alt="HTML">
+        <p class="mt-2">HTML</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/css.png" class="skill-icon" alt="CSS">
+        <p class="mt-2">CSS</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/jss.png" class="skill-icon" alt="JavaScript">
+        <p class="mt-2">JavaScript</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/bootstrap.jpg" class="skill-icon" alt="Bootstrap">
+        <p class="mt-2">Bootstrap</p>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Frameworks & Libraries</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/laravel.png" class="skill-icon" alt="Laravel">
+        <p class="mt-2">Laravel</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/python.png" class="skill-icon" alt="PIL">
+        <p class="mt-2">PIL</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/python.png" class="skill-icon" alt="OCR">
+        <p class="mt-2">OCR</p>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Database & Tools</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/mysql.jpg" class="skill-icon" alt="MySQL">
+        <p class="mt-2">MySQL</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/phpmyadmin.png" class="skill-icon" alt="phpMyAdmin">
+        <p class="mt-2">phpMyAdmin</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/vscode.png" class="skill-icon" alt="VS Code">
+        <p class="mt-2">VS Code</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/netbeans.png" class="skill-icon" alt="NetBeans">
+        <p class="mt-2">NetBeans</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/xampp.png" class="skill-icon" alt="XAMPP">
+        <p class="mt-2">XAMPP</p>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Design & Productivity</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/adobe.png" class="skill-icon" alt="Photoshop">
+        <p class="mt-2">Photoshop</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/canva.jpg" class="skill-icon" alt="Canva">
+        <p class="mt-2">Canva</p>
+      </div>
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/ms365.png" class="skill-icon" alt="Microsoft 365">
+        <p class="mt-2">Microsoft 365</p>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Hardware & Embedded</h4>
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="skill-card text-center mx-2 mb-3">
+        <img src="pictures/raspberry.png" class="skill-icon" alt="Raspberry Pi 4">
+        <p class="mt-2">Raspberry Pi 4</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row g-4">
+
+      <!-- AIMS Project -->
+      <div class="col-md-4">
+        <div class="card project-card shadow">
+          <div class="card-body text-center">
+            
+            <!-- Project Logo -->
+            <img src="pictures/AIMS.png" alt="AIMS Logo" class="img-fluid mb-3" style="max-height: 80px;">
+            
+            <h5 class="card-title">AIMS - Asset Inventory Management System</h5>
+            <p class="card-text">
+              PHP, HTML, Bootstrap, MySQL. Asset management for accounting department with request, transfer, and disposal modules.
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aimsModal">View More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time-Keeping Project -->
+      <div class="col-md-4">
+        <div class="card project-card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Time-Keeping Web System with RFID</h5>
+            <p class="card-text">Java, Apache Tomcat, MySQL Workbench. RFID attendance tracking system for employees, real-time logging and reporting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fake Paracetamol Detection -->
+      <div class="col-md-4">
+        <div class="card project-card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Fake Paracetamol Detection Model (Thesis)</h5>
+            <p class="card-text">Python, CNN, PIL, Tesseract OCR. Deep learning model to classify authentic and counterfeit paracetamol tablets.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AIMS Modal with Zoomable Screenshots -->
+<div class="modal fade" id="aimsModal" tabindex="-1" aria-labelledby="aimsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="aimsModalLabel">AIMS Screenshots</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="row g-4 text-center">
+          
+          <!-- Dashboard -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/dashboard.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/dashboard.png" class="img-fluid rounded shadow modal-img" alt="Dashboard">
+            </a>
+            <p class="mt-2">Dashboard</p>
+          </div>
+
+          <!-- Request Module -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/request.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/request.png" class="img-fluid rounded shadow modal-img" alt="Request Module">
+            </a>
+            <p class="mt-2">Request Module</p>
+          </div>
+
+          <!-- Transfer Module -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/transfer.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/transfer.png" class="img-fluid rounded shadow modal-img" alt="Transfer Module">
+            </a>
+            <p class="mt-2">Transfer</p>
+          </div>
+
+          <!-- Disposal Module -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/disposal.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/disposal.png" class="img-fluid rounded shadow modal-img" alt="Disposal Module">
+            </a>
+            <p class="mt-2">Disposal</p>
+          </div>
+
+          <!-- Monitoring -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/monitoring.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/monitoring.png" class="img-fluid rounded shadow modal-img" alt="Monitoring">
+            </a>
+            <p class="mt-2">Monitoring</p>
+          </div>
+
+          <!-- Sticker Printing -->
+          <div class="col-md-4 mb-3">
+            <a href="pictures/sticker.png" class="glightbox" data-gallery="aims-gallery">
+              <img src="pictures/sticker.png" class="img-fluid rounded shadow modal-img" alt="Sticker Module">
+            </a>
+            <p class="mt-2">Sticker Printing</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Demo Video -->
+  <div class="mb-4">
+    <h6 class="text-center mb-3">System Demo Video</h6>
+    
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://drive.google.com/file/d/1_1lgyJpChxZrksJnQ0riNUqGktKYFt1D/preview"
+        allow="autoplay"
+        allowfullscreen
+        class="rounded shadow">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Contact</h2>
+    <p>Email: ashleyquilay81@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/ashleyquilay81-max" target="_blank">github.com/ashleyquilay81-max</a></p>
+    <p>Location: Calamba, Philippines</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Sean Ashley Quilay | System Developer</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+// Smooth scroll offset for fixed navbar
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const offset = 70;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = target.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+  });
+});
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+  });
+  async function downloadResumePDF() {
+  const { jsPDF } = window.jspdf;
+
+  const doc = new jsPDF('p', 'mm', 'a4'); // A4 page
+  const resumeElement = document.getElementById('resume-content');
+
+  // convert HTML to canvas
+  const canvas = await html2canvas(resumeElement, { scale: 2 });
+  const imgData = canvas.toDataURL('image/png');
+
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+  const imgProps = doc.getImageProperties(imgData);
+  const pdfHeight = (imgProps.height * pageWidth) / imgProps.width;
+
+  doc.addImage(imgData, 'PNG', 0, 0, pageWidth, pdfHeight);
+  doc.save('SeanAshleyQuilay_Resume.pdf'); // triggers auto-download
+}
+</script>
+</body>
+</html>
