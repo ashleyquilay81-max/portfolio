@@ -2,472 +2,303 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Sean Ashley Quilay | System Developer</title>
-
-<!-- Bootstrap 5 & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-<!-- GLightbox CSS -->
 <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Sean Ashley Quilay</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
+<nav class="site-nav" aria-label="Main">
+  <div class="inner">
+    <a class="brand" href="#top">Sean Ashley Quilay</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="container text-center">
-    <h1 class="display-4 fw-bold">Sean Ashley Quilay</h1>
-    <p class="lead">System Developer</p>
-    <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
-  </div>
-</section>
+<main id="top">
+  <!-- Intro -->
+  <header class="intro">
+    <div class="wrap">
+      <div class="row-top">
+        <div>
+          <h1>Sean Ashley Quilay</h1>
+          <p class="role">System Developer</p>
+          <p class="summary">Computer Science graduate and full-stack developer with experience in web development, software systems, and machine learning. I build end-to-end applications that solve real problems.</p>
+          <div class="contact-line">
+            <span><i class="bi bi-geo-alt"></i>Calamba, Philippines</span>
+            <a href="mailto:ashleyquilay81@gmail.com"><i class="bi bi-envelope"></i>ashleyquilay81@gmail.com</a>
+            <a href="https://github.com/ashleyquilay81-max" target="_blank" rel="noopener"><i class="bi bi-github"></i>GitHub</a>
+          </div>
+          <button class="btn-solid" onclick="downloadResumePDF()"><i class="bi bi-download me-2"></i>Download resume</button>
+          <a class="btn-ghost" href="#projects">View projects</a>
+        </div>
+        <img class="avatar" src="pictures/me.jpg" alt="Photo of Sean Ashley Quilay">
+      </div>
+    </div>
+  </header>
 
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <h2 class="text-center mb-5">About Me</h2>
-    <div class="row align-items-center">
-      
-      <!-- Profile Picture -->
-      <div class="col-md-4 text-center mb-4 mb-md-0">
-        <div class="profile-pic-frame mx-auto">
-          <img src="pictures/me.jpg" alt="Sean Ashley Quilay" class="img-fluid rounded-circle">
+  <!-- Experience -->
+  <section class="block" id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">Sep 2025 – Feb 2026</div>
+        <div>
+          <h3>System Management Staff</h3>
+          <p class="sub">Kanepackage Philippine Inc.</p>
+          <ul>
+            <li>Built an Asset Inventory Management System with PHP, Bootstrap, and MySQL.</li>
+            <li>Managed system operations and kept asset tracking running smoothly.</li>
+            <li>Implemented an online approval process that uses timestamps as e-signatures.</li>
+            <li>Calculated yearly depreciation and each asset's end date from its acquisition date.</li>
+          </ul>
         </div>
       </div>
-      
-      <!-- Description and Education -->
-      <div class="col-md-8">
-        <p>
-          I’m a passionate Computer Science graduate and Full-Stack Developer with hands-on experience in web development, software systems, game development, and machine learning. I enjoy building end-to-end applications that solve real-world problems and continuously challenge myself to learn new technologies.
-        </p>
-        
-        <h5 class="mt-4">Education</h5>
-        <ul>
-          <span class="badge bg-primary me-2">Dean's Lister 2023</span>
-          <span class="badge bg-success me-2">Best Thesis 2025</span>
-        </ul>
+      <div class="entry">
+        <div class="when">Dec 2024 – Jan 2025</div>
+        <div>
+          <h3>IT Database Admin (Intern)</h3>
+          <p class="sub">Torres Technology Center Corp</p>
+          <ul>
+            <li>Installed Ubuntu virtual machines and maintained system environments.</li>
+            <li>Built an RFID time-keeping system with Java and Apache Tomcat on a Raspberry Pi.</li>
+          </ul>
+        </div>
       </div>
-      
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="block" id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="when">2025 · Work</div>
+        <div>
+          <h3>AIMS: Asset Inventory Management System</h3>
+          <p>Asset management for the accounting department, with request, transfer, and disposal modules.</p>
+          <div class="tags">PHP, Bootstrap, MySQL</div>
+          <button class="link-btn" data-bs-toggle="modal" data-bs-target="#aimsModal">View screenshots and demo</button>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2025 · Thesis</div>
+        <div>
+          <h3>Fake Paracetamol Detection</h3>
+          <p>Deep learning model that classifies authentic and counterfeit paracetamol tablets, with 98% accuracy.</p>
+          <div class="tags">Python, CNN, PIL, Tesseract OCR</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2025 · Internship</div>
+        <div>
+          <h3>RFID Time-Keeping Web System</h3>
+          <p>Employee attendance tracking with real-time logging and reporting.</p>
+          <div class="tags">Java, Apache Tomcat, MySQL</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">School project</div>
+        <div>
+          <h3>Gym Website</h3>
+          <p>Responsive website with online booking, online payment, and membership management.</p>
+          <div class="tags">Laravel, PHP, MySQL</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="block" id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <dl class="mb-0">
+        <div class="skill-row"><dt>Languages</dt><dd>Java, C++, C#, PHP, SQL</dd></div>
+        <div class="skill-row"><dt>Web</dt><dd>HTML, CSS, JavaScript, Bootstrap</dd></div>
+        <div class="skill-row"><dt>Frameworks &amp; libraries</dt><dd>Laravel, PIL, OCR</dd></div>
+        <div class="skill-row"><dt>Database &amp; tools</dt><dd>MySQL, phpMyAdmin, VS Code, Visual Studio, NetBeans, XAMPP</dd></div>
+        <div class="skill-row"><dt>Design &amp; productivity</dt><dd>Photoshop, Canva, Google Workspace, Microsoft 365</dd></div>
+        <div class="skill-row"><dt>Hardware</dt><dd>Raspberry Pi 4</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="block" id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="when">2021 – 2025</div>
+        <div>
+          <h3>BS in Computer Science</h3>
+          <p class="sub">National University – Laguna</p>
+          <ul><li>Dean's Lister (2nd Honors)</li><li>Best in Thesis 2025</li></ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2019 – 2021</div>
+        <div>
+          <h3>Information and Communication Technology</h3>
+          <p class="sub">University of Perpetual Help System Dalta – Calamba</p>
+          <ul><li>Most Improved Student Awardee</li></ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2022</div>
+        <div>
+          <h3>Certifications</h3>
+          <ul><li>Amazon AWSome Day Online Conference</li><li>Programmers Codeposting Tech Talks</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><i class="bi bi-envelope"></i><a href="mailto:ashleyquilay81@gmail.com">ashleyquilay81@gmail.com</a></li>
+        <li><i class="bi bi-github"></i><a href="https://github.com/ashleyquilay81-max" target="_blank" rel="noopener">github.com/ashleyquilay81-max</a></li>
+        <li><i class="bi bi-geo-alt"></i>Calamba, Philippines</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Sean Ashley Quilay</div>
+</footer>
+
+<!-- AIMS modal -->
+<div class="modal fade" id="aimsModal" tabindex="-1" aria-labelledby="aimsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aimsModalLabel">AIMS screenshots</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4"><a href="pictures/dashboard.png" class="glightbox" data-gallery="aims"><img src="pictures/dashboard.png" class="modal-img" alt="Dashboard"></a><p class="cap">Dashboard</p></div>
+          <div class="col-6 col-md-4"><a href="pictures/request.png" class="glightbox" data-gallery="aims"><img src="pictures/request.png" class="modal-img" alt="Request module"></a><p class="cap">Request</p></div>
+          <div class="col-6 col-md-4"><a href="pictures/transfer.png" class="glightbox" data-gallery="aims"><img src="pictures/transfer.png" class="modal-img" alt="Transfer module"></a><p class="cap">Transfer</p></div>
+          <div class="col-6 col-md-4"><a href="pictures/disposal.png" class="glightbox" data-gallery="aims"><img src="pictures/disposal.png" class="modal-img" alt="Disposal module"></a><p class="cap">Disposal</p></div>
+          <div class="col-6 col-md-4"><a href="pictures/monitoring.png" class="glightbox" data-gallery="aims"><img src="pictures/monitoring.png" class="modal-img" alt="Monitoring"></a><p class="cap">Monitoring</p></div>
+          <div class="col-6 col-md-4"><a href="pictures/sticker.png" class="glightbox" data-gallery="aims"><img src="pictures/sticker.png" class="modal-img" alt="Sticker printing"></a><p class="cap">Sticker printing</p></div>
+        </div>
+        <h6 class="mt-4 mb-3">Demo video</h6>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://drive.google.com/file/d/1_1lgyJpChxZrksJnQ0riNUqGktKYFt1D/preview" title="AIMS demo video" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
   </div>
-<div class="text-center mt-3">
-  <button class="btn btn-primary" onclick="downloadResumePDF()">Download Resume (PDF)</button>
 </div>
-</section>
-<!-- Hidden Resume Content for PDF -->
-<div id="resume-content" style="position: absolute; left: -9999px; top: 0; width: 210mm; padding: 30px 45px; font-family: 'Times New Roman', Times, serif; font-size: 10.5pt; line-height: 1.25; color: #000; text-align: justify;">
+
+<!-- Hidden resume content used for the PDF download -->
+<div id="resume-content" style="position:absolute; left:-9999px; top:0; width:210mm; padding:30px 45px; font-family:'Times New Roman', Times, serif; font-size:10.5pt; line-height:1.25; color:#000; text-align:justify; background:#fff;">
   <h1 style="text-align:center; font-size:20pt; font-weight:bold; text-transform:uppercase; margin-bottom:5px;">Sean Ashley A. Quilay</h1>
-  
   <div style="text-align:center; font-size:10pt; margin-bottom:12px;">
-    0956-653-7749 | ashleyquilay81@gmail.com | #015 Purok 6, Barangay Punta, Calamba City | 
-    <a href="https://ashleyquilay81-max.github.io/portfolio/" target="_blank">ashleyquilay81-max.github.io/portfolio</a>
+    0956-653-7749 | ashleyquilay81@gmail.com | #015 Purok 6, Barangay Punta, Calamba City | ashleyquilay81-max.github.io/portfolio
   </div>
 
-  <!-- Career Objective -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Career Objective</div>
-  <p style="margin:3px 0; text-align: justify;">
-    Passionate and driven Computer Science graduate with hands-on experience in web development, software systems, game development, and machine learning. Seeking an entry-level role in IT or web development to apply knowledge and contribute to real-world solutions.
-  </p>
+  <p style="margin:3px 0;">Passionate and driven Computer Science graduate with hands-on experience in web development, software systems, game development, and machine learning. Seeking an entry-level role in IT or web development to apply knowledge and contribute to real-world solutions.</p>
 
-  <!-- Technical Skills -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Technical Skills</div>
-  <ul style="margin:4px 0 8px 18px; padding:0; text-align: justify;">
+  <ul style="margin:4px 0 8px 18px; padding:0;">
     <li>Programming: Java, C++, C#, PHP, HTML, CSS, SQL</li>
-    <li>Frameworks & Libraries: Laravel, Laravel Breeze, PIL, OCR</li>
-    <li>Tools & IDEs: Visual Studio, VS Code, NetBeans, XAMPP</li>
+    <li>Frameworks &amp; Libraries: Laravel, Laravel Breeze, PIL, OCR</li>
+    <li>Tools &amp; IDEs: Visual Studio, VS Code, NetBeans, XAMPP</li>
     <li>Database: MySQL, phpMyAdmin</li>
     <li>Hardware: Raspberry Pi 4</li>
     <li>Other: Photoshop, Canva, Google Workspace, Microsoft 365</li>
   </ul>
 
-  <!-- Experience -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Experience</div>
-  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;">
-    <div>KANEPACKAGE PHILIPPINE INC.</div>
-    <div>Sep 2025 – Feb 2026</div>
-  </div>
+  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;"><div>KANEPACKAGE PHILIPPINE INC.</div><div>Sep 2025 – Feb 2026</div></div>
   <div style="font-style:italic; margin-bottom:3px;">System Management Staff</div>
-  <ul style="margin:4px 0 8px 18px; padding:0; text-align: justify;">
+  <ul style="margin:4px 0 8px 18px; padding:0;">
     <li>Developed Asset Inventory Management System using PHP, HTML, Bootstrap, CSS, SQL.</li>
     <li>Managed system operations and ensured smooth asset tracking.</li>
-    <li>Implentend a full online approval process using time-stamp as e-signature.</li>
+    <li>Implemented a full online approval process using time-stamp as e-signature.</li>
     <li>Calculates depreciation for the whole fiscal year and shows the last day of the asset upon its acquisition date.</li>
   </ul>
 
-  <!-- Internship -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Internship</div>
-  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;">
-    <div>TORRES TECHNOLOGY CENTER CORP</div>
-    <div>Dec 2024 – Jan 2025</div>
-  </div>
+  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;"><div>TORRES TECHNOLOGY CENTER CORP</div><div>Dec 2024 – Jan 2025</div></div>
   <div style="font-style:italic; margin-bottom:3px;">IT Database Admin</div>
-  <ul style="margin:4px 0 8px 18px; padding:0; text-align: justify;">
+  <ul style="margin:4px 0 8px 18px; padding:0;">
     <li>Installed Ubuntu VMs and maintained system environments.</li>
-    <li>Developed RFID Time-Keeping System with Java & Apache Tomcat on Raspberry Pi.</li>
+    <li>Developed RFID Time-Keeping System with Java &amp; Apache Tomcat on Raspberry Pi.</li>
   </ul>
 
-  <!-- Projects -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Projects</div>
-<ul style="margin:4px 0 8px 18px; padding:0; text-align: justify;">
-  <li>Fake Paracetamol Detection - Python, CNN, PIL, OCR (Thesis Project, National University – Laguna) | Achieved 98% accuracy.</li>
-  <li>Gym Website - Laravel, PHP, MySQL (School Project) | Developed a responsive gym website with online booking, online payment, membership management, and improved booking efficiency.</li> 
-  <li>Basic POS System - C# Desktop App (School Activity) | Implemented basic POS functionalities for sales and inventory management.</li>
-  <li>Grading System - C# Desktop App (School Project, Milagrosa Elementary School) | Developed a grading system to manage student grades efficiently.</li>
-</ul>
+  <ul style="margin:4px 0 8px 18px; padding:0;">
+    <li>Fake Paracetamol Detection - Python, CNN, PIL, OCR (Thesis Project, National University – Laguna) | Achieved 98% accuracy.</li>
+    <li>Gym Website - Laravel, PHP, MySQL (School Project) | Developed a responsive gym website with online booking, online payment, membership management, and improved booking efficiency.</li>
+    <li>Basic POS System - C# Desktop App (School Activity) | Implemented basic POS functionalities for sales and inventory management.</li>
+    <li>Grading System - C# Desktop App (School Project, Milagrosa Elementary School) | Developed a grading system to manage student grades efficiently.</li>
+  </ul>
 
-<!-- Education -->
-<div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Education</div>
+  <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Education</div>
+  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;"><div>NATIONAL UNIVERSITY – LAGUNA</div><div>2021 – 2025</div></div>
+  <div>Bachelor of Science in Computer Science</div>
+  <ul style="margin:3px 0 0 18px; padding:0;"><li>Dean’s Lister (2nd Honors)</li><li>Best in Thesis 2025</li></ul>
+  <div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;"><div>UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA – CALAMBA</div><div>2019 – 2021</div></div>
+  <div>Information and Communication Technology</div>
+  <ul style="margin:3px 0 0 18px; padding:0;"><li>Most Improved Student Awardee</li></ul>
 
-<div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;">
-  <div>NATIONAL UNIVERSITY – LAGUNA</div>
-  <div>2021 – 2025</div>
-</div>
-<div>Bachelor of Science in Computer Science</div>
-<ul style="margin:3px 0 0 18px; padding:0; text-align: justify;">
-  <li>Dean’s Lister (2nd Honors)</li>
-  <li>Best in Thesis 2025</li>
-</ul>
-
-<div style="display:flex; justify-content:space-between; font-weight:bold; margin-top:6px;">
-  <div>UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA – CALAMBA</div>
-  <div>2019 – 2021</div>
-</div>
-<div>Information and Communication Technology</div>
-<ul style="margin:3px 0 0 18px; padding:0; text-align: justify;">
-  <li>Most Improved Student Awardee</li>
-</ul>
-  <!-- Certifications -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Certifications</div>
-  <ul style="margin:4px 0 8px 18px; padding:0; text-align: justify;">
+  <ul style="margin:4px 0 8px 18px; padding:0;">
     <li>Programmers Codeposting Tech Talks (2022)</li>
     <li>Amazon AWSome Day Online Conference (2022)</li>
   </ul>
 
-  <!-- Additional / Soft Skills -->
   <div style="font-weight:bold; text-transform:uppercase; margin-top:14px; margin-bottom:4px; border-bottom:1px solid #000; padding-bottom:2px;">Additional</div>
-  <p style="margin:3px 0; text-align: justify;"><strong>Soft Skills:</strong> Adaptability, Resourceful, Flexible, Resilient</p>
+  <p style="margin:3px 0;"><strong>Soft Skills:</strong> Adaptability, Resourceful, Flexible, Resilient</p>
 </div>
-<!-- Skills -->
-<section id="skills" class="bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Skills</h2>
-
-    <h4 class="mb-3">Programming Languages</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/java.jpg" class="skill-icon" alt="Java">
-        <p class="mt-2">Java</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/c++.png" class="skill-icon" alt="C++">
-        <p class="mt-2">C++</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/csharp.png" class="skill-icon" alt="C#">
-        <p class="mt-2">C#</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/php.png" class="skill-icon" alt="PHP">
-        <p class="mt-2">PHP</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/sql.png" class="skill-icon" alt="SQL">
-        <p class="mt-2">SQL</p>
-      </div>
-    </div>
-
-    <h4 class="mb-3">Web Technologies</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/html.png" class="skill-icon" alt="HTML">
-        <p class="mt-2">HTML</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/css.png" class="skill-icon" alt="CSS">
-        <p class="mt-2">CSS</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/jss.png" class="skill-icon" alt="JavaScript">
-        <p class="mt-2">JavaScript</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/bootstrap.jpg" class="skill-icon" alt="Bootstrap">
-        <p class="mt-2">Bootstrap</p>
-      </div>
-    </div>
-
-    <h4 class="mb-3">Frameworks & Libraries</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/laravel.png" class="skill-icon" alt="Laravel">
-        <p class="mt-2">Laravel</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/python.png" class="skill-icon" alt="PIL">
-        <p class="mt-2">PIL</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/python.png" class="skill-icon" alt="OCR">
-        <p class="mt-2">OCR</p>
-      </div>
-    </div>
-
-    <h4 class="mb-3">Database & Tools</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/mysql.jpg" class="skill-icon" alt="MySQL">
-        <p class="mt-2">MySQL</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/phpmyadmin.png" class="skill-icon" alt="phpMyAdmin">
-        <p class="mt-2">phpMyAdmin</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/vscode.png" class="skill-icon" alt="VS Code">
-        <p class="mt-2">VS Code</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/netbeans.png" class="skill-icon" alt="NetBeans">
-        <p class="mt-2">NetBeans</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/xampp.png" class="skill-icon" alt="XAMPP">
-        <p class="mt-2">XAMPP</p>
-      </div>
-    </div>
-
-    <h4 class="mb-3">Design & Productivity</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/adobe.png" class="skill-icon" alt="Photoshop">
-        <p class="mt-2">Photoshop</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/canva.jpg" class="skill-icon" alt="Canva">
-        <p class="mt-2">Canva</p>
-      </div>
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/ms365.png" class="skill-icon" alt="Microsoft 365">
-        <p class="mt-2">Microsoft 365</p>
-      </div>
-    </div>
-
-    <h4 class="mb-3">Hardware & Embedded</h4>
-    <div class="d-flex flex-wrap justify-content-center mb-4">
-      <div class="skill-card text-center mx-2 mb-3">
-        <img src="pictures/raspberry.png" class="skill-icon" alt="Raspberry Pi 4">
-        <p class="mt-2">Raspberry Pi 4</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <div class="container">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row g-4">
-
-      <!-- AIMS Project -->
-      <div class="col-md-4">
-        <div class="card project-card shadow">
-          <div class="card-body text-center">
-            
-            <!-- Project Logo -->
-            <img src="pictures/AIMS.png" alt="AIMS Logo" class="img-fluid mb-3" style="max-height: 80px;">
-            
-            <h5 class="card-title">AIMS - Asset Inventory Management System</h5>
-            <p class="card-text">
-              PHP, HTML, Bootstrap, MySQL. Asset management for accounting department with request, transfer, and disposal modules.
-            </p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aimsModal">View More</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Time-Keeping Project -->
-      <div class="col-md-4">
-        <div class="card project-card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Time-Keeping Web System with RFID</h5>
-            <p class="card-text">Java, Apache Tomcat, MySQL Workbench. RFID attendance tracking system for employees, real-time logging and reporting.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fake Paracetamol Detection -->
-      <div class="col-md-4">
-        <div class="card project-card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Fake Paracetamol Detection Model (Thesis)</h5>
-            <p class="card-text">Python, CNN, PIL, Tesseract OCR. Deep learning model to classify authentic and counterfeit paracetamol tablets.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- AIMS Modal with Zoomable Screenshots -->
-<div class="modal fade" id="aimsModal" tabindex="-1" aria-labelledby="aimsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title" id="aimsModalLabel">AIMS Screenshots</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body">
-        <div class="row g-4 text-center">
-          
-          <!-- Dashboard -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/dashboard.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/dashboard.png" class="img-fluid rounded shadow modal-img" alt="Dashboard">
-            </a>
-            <p class="mt-2">Dashboard</p>
-          </div>
-
-          <!-- Request Module -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/request.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/request.png" class="img-fluid rounded shadow modal-img" alt="Request Module">
-            </a>
-            <p class="mt-2">Request Module</p>
-          </div>
-
-          <!-- Transfer Module -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/transfer.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/transfer.png" class="img-fluid rounded shadow modal-img" alt="Transfer Module">
-            </a>
-            <p class="mt-2">Transfer</p>
-          </div>
-
-          <!-- Disposal Module -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/disposal.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/disposal.png" class="img-fluid rounded shadow modal-img" alt="Disposal Module">
-            </a>
-            <p class="mt-2">Disposal</p>
-          </div>
-
-          <!-- Monitoring -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/monitoring.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/monitoring.png" class="img-fluid rounded shadow modal-img" alt="Monitoring">
-            </a>
-            <p class="mt-2">Monitoring</p>
-          </div>
-
-          <!-- Sticker Printing -->
-          <div class="col-md-4 mb-3">
-            <a href="pictures/sticker.png" class="glightbox" data-gallery="aims-gallery">
-              <img src="pictures/sticker.png" class="img-fluid rounded shadow modal-img" alt="Sticker Module">
-            </a>
-            <p class="mt-2">Sticker Printing</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Demo Video -->
-  <div class="mb-4">
-    <h6 class="text-center mb-3">System Demo Video</h6>
-    
-    <div class="ratio ratio-16x9">
-      <iframe 
-        src="https://drive.google.com/file/d/1_1lgyJpChxZrksJnQ0riNUqGktKYFt1D/preview"
-        allow="autoplay"
-        allowfullscreen
-        class="rounded shadow">
-      </iframe>
-    </div>
-  </div>
-</div>
-
-<!-- Contact -->
-<section id="contact" class="bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Contact</h2>
-    <p>Email: ashleyquilay81@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/ashleyquilay81-max" target="_blank">github.com/ashleyquilay81-max</a></p>
-    <p>Location: Calamba, Philippines</p>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>© 2026 Sean Ashley Quilay | System Developer</p>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
-// Smooth scroll offset for fixed navbar
-document.querySelectorAll('a.nav-link').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    const offset = 70;
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementRect = target.getBoundingClientRect().top;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
-    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-  });
-});
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-    touchNavigation: true,
-    loop: true,
-    zoomable: true,
-  });
-  async function downloadResumePDF() {
+GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: true });
+
+async function downloadResumePDF() {
   const { jsPDF } = window.jspdf;
-
-  const doc = new jsPDF('p', 'mm', 'a4'); // A4 page
-  const resumeElement = document.getElementById('resume-content');
-
-  // convert HTML to canvas
-  const canvas = await html2canvas(resumeElement, { scale: 2 });
+  const doc = new jsPDF('p', 'mm', 'a4');
+  const canvas = await html2canvas(document.getElementById('resume-content'), { scale: 2, backgroundColor: '#ffffff' });
   const imgData = canvas.toDataURL('image/png');
+  const pageW = doc.internal.pageSize.getWidth();
+  const pageH = doc.internal.pageSize.getHeight();
+  const imgH = (canvas.height * pageW) / canvas.width;
 
-  const pageWidth = doc.internal.pageSize.getWidth();
-  const pageHeight = doc.internal.pageSize.getHeight();
-  const imgProps = doc.getImageProperties(imgData);
-  const pdfHeight = (imgProps.height * pageWidth) / imgProps.width;
-
-  doc.addImage(imgData, 'PNG', 0, 0, pageWidth, pdfHeight);
-  doc.save('SeanAshleyQuilay_Resume.pdf'); // triggers auto-download
+  // Split across pages if the resume is taller than one A4 sheet
+  let remaining = imgH, y = 0;
+  doc.addImage(imgData, 'PNG', 0, y, pageW, imgH);
+  remaining -= pageH;
+  while (remaining > 0) {
+    y -= pageH;
+    doc.addPage();
+    doc.addImage(imgData, 'PNG', 0, y, pageW, imgH);
+    remaining -= pageH;
+  }
+  doc.save('SeanAshleyQuilay_Resume.pdf');
 }
 </script>
 </body>
